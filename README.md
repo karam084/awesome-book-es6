@@ -1,4 +1,4 @@
-# Awsome Books
+# Awsome Books ES6
 This project based on the linter configuration. setup project built with html and css
 
 ![image](https://user-images.githubusercontent.com/31547587/153085428-e5240a86-f0f9-41ec-aa9c-c43d721415ce.png)
@@ -22,7 +22,7 @@ To get a local copy up and running follow these simple example steps.
 To have a local copy of this project, follow theese simple steps:
 
 Open the terminal comand line window
-`https://github.com/HectorTorresE/Awesome-books.git`
+`https://github.com/karam084/awesome-book-es6`
 Open the index.html file with any browser
 Have fun!
 
@@ -31,11 +31,6 @@ Have fun!
 
 ## Authors
 
-👤 **Hector Torres**
-
-- GitHub: [@githubhandle](https://github.com/HectorTorresE)
-- Twitter: [@twitterhandle](https://twitter.com/HectorT00406915)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 👤 **Karam Fouad**
 
@@ -48,7 +43,7 @@ Contributions, issues, and feature requests are welcome!
 Feel free to check the [issues page](../../issues/).
 
 ## Show your support
-
+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
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
