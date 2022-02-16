@@ -13,7 +13,7 @@ const showAdd = document.getElementById('showAdd');
 const showCon = document.getElementById('showCon');
 const time = document.getElementById('time');
 
-var showBooks = () => {
+const showBooks = () => {
   showBook.classList.remove('Invisible');
   showBook.classList.add('visible');
   showList.classList.add('colBlue');
@@ -30,7 +30,7 @@ var showBooks = () => {
   }
 };
 
-var AddShow = () => {
+const AddShow = () => {
   addBook.classList.remove('Invisible');
   addBook.classList.add('visible');
   showAdd.classList.add('colBlue');
@@ -47,7 +47,7 @@ var AddShow = () => {
   }
 };
 
-var showContact = () => {
+const showContact = () => {
   contact.classList.remove('Invisible');
   contact.classList.add('visible');
   showCon.classList.add('colBlue');
@@ -64,7 +64,7 @@ var showContact = () => {
   }
 };
 
-var Add = () => {
+const Add = () => {
   if (bookTitle.value !== '' && bookAuthor.value !== '') {
     bList.AddBook(bookTitle.value, bookAuthor.value);
     localStorage.setItem('BookList', JSON.stringify(bList.Books));
@@ -72,7 +72,7 @@ var Add = () => {
   }
 };
 
-var Remove = () => {
+const Remove = () => {
   if (this.id > -1) {
     bList.RemoveBook(this.id);
     localStorage.setItem('BookList', JSON.stringify(bList.Books));
@@ -80,7 +80,7 @@ var Remove = () => {
   }
 };
 
-var displayBooks = () => {
+const displayBooks = () => {
   if (bList.Books.length >= 1) {
     bList.Books.map((el, i) => {
       const BookSec = document.getElementById('bookSec');
