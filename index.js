@@ -13,7 +13,7 @@ const showAdd = document.getElementById('showAdd');
 const showCon = document.getElementById('showCon');
 const time = document.getElementById('time');
 
-function showBooks() {
+var showBooks = () => {
   showBook.classList.remove('Invisible');
   showBook.classList.add('visible');
   showList.classList.add('colBlue');
@@ -28,9 +28,9 @@ function showBooks() {
     contact.classList.add('Invisible');
     showAdd.classList.remove('colBlue');
   }
-}
+};
 
-function AddShow() {
+var AddShow = () => {
   addBook.classList.remove('Invisible');
   addBook.classList.add('visible');
   showAdd.classList.add('colBlue');
@@ -45,9 +45,9 @@ function AddShow() {
     contact.classList.add('Invisible');
     showCon.classList.remove('colBlue');
   }
-}
+};
 
-function showContact() {
+var showContact = () => {
   contact.classList.remove('Invisible');
   contact.classList.add('visible');
   showCon.classList.add('colBlue');
@@ -62,25 +62,25 @@ function showContact() {
     addBook.classList.add('Invisible');
     showAdd.classList.remove('colBlue');
   }
-}
+};
 
-function Add() {
+var Add = () => {
   if (bookTitle.value !== '' && bookAuthor.value !== '') {
     bList.AddBook(bookTitle.value, bookAuthor.value);
     localStorage.setItem('BookList', JSON.stringify(bList.Books));
     window.location.reload();
   }
-}
+};
 
-function Remove() {
+var Remove = () => {
   if (this.id > -1) {
     bList.RemoveBook(this.id);
     localStorage.setItem('BookList', JSON.stringify(bList.Books));
     window.location.reload();
   }
-}
+};
 
-function displayBooks() {
+var displayBooks = () => {
   if (bList.Books.length >= 1) {
     bList.Books.map((el, i) => {
       const BookSec = document.getElementById('bookSec');
@@ -217,7 +217,7 @@ function displayBooks() {
       return null;
     });
   }
-}
+};
 
 document.addEventListener('DOMContentLoaded', () => {
   showList.addEventListener('click', showBooks);
